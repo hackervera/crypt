@@ -1,0 +1,7 @@
+<script>
+	function cb(stuff){
+		console.log("STUFF", stuff)
+	}
+var data = { type: "key-challenge", text: "challenge string", callback:"cb" };
+window.postMessage(data, "*");
+</script>
